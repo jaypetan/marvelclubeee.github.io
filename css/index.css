@@ -21,7 +21,7 @@ h4 {
 }
 
 .jumbotron {
-    background-color: #f4511e;
+    background-color: #007aff;
     color: #fff;
     padding: 100px 25px;
     font-family: Montserrat, sans-serif;
@@ -36,12 +36,12 @@ h4 {
 }
 
 .logo-small {
-    color: #f4511e;
+    color: #007aff;
     font-size: 50px;
 }
 
 .logo {
-    color: #f4511e;
+    color: #007aff;
     font-size: 200px;
 }
 
@@ -60,15 +60,15 @@ h4 {
 .carousel-control.right,
 .carousel-control.left {
     background-image: none;
-    color: #f4511e;
+    color: #007aff;
 }
 
 .carousel-indicators li {
-    border-color: #f4511e;
+    border-color: #007aff;
 }
 
 .carousel-indicators li.active {
-    background-color: #f4511e;
+    background-color: #007aff;
 }
 
 .item h4 {
@@ -84,7 +84,7 @@ h4 {
 }
 
 .panel {
-    border: 1px solid #f4511e;
+    border: 1px solid #007aff;
     border-radius: 0 !important;
     transition: box-shadow 0.5s;
 }
@@ -94,14 +94,14 @@ h4 {
 }
 
 .panel-footer .btn:hover {
-    border: 1px solid #f4511e;
+    border: 1px solid #007aff;
     background-color: #fff !important;
-    color: #f4511e;
+    color: #007aff;
 }
 
 .panel-heading {
     color: #fff !important;
-    background-color: #f4511e !important;
+    background-color: #007aff !important;
     padding: 25px;
     border-bottom: 1px solid transparent;
     border-top-left-radius: 0px;
@@ -125,17 +125,18 @@ h4 {
 
 .panel-footer .btn {
     margin: 15px 0;
-    background-color: #f4511e;
+    background-color: #007aff;
     color: #fff;
 }
 
 .navbar {
+    vertical-align: middle !important;
+    height: 90px;
     margin-bottom: 0;
-    background-color: #f4511e;
+    background-color: #007aff;
     z-index: 9999;
     border: 0;
-    font-size: 12px !important;
-    line-height: 1.42857143 !important;
+    font-size: 15px !important;
     letter-spacing: 4px;
     border-radius: 0;
     font-family: Montserrat, sans-serif;
@@ -148,7 +149,8 @@ h4 {
 
 .navbar-nav li a:hover,
 .navbar-nav li.active a {
-    color: #f4511e !important;
+    height: 90px;
+    color: #007aff !important;
     background-color: #fff !important;
 }
 
@@ -160,7 +162,7 @@ h4 {
 footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
-    color: #f4511e;
+    color: #007aff;
 }
 
 .slideanim {
