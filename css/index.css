@@ -35,16 +35,6 @@ h4 {
     background-color: #f6f6f6;
 }
 
-.logo-small {
-    color: #007aff;
-    font-size: 50px;
-}
-
-.logo {
-    color: #007aff;
-    font-size: 200px;
-}
-
 .thumbnail {
     padding: 0 0 15px 0;
     border: none;
@@ -130,38 +120,34 @@ h4 {
 }
 
 .navbar {
-    vertical-align: middle !important;
-    height: 90px;
-    margin-bottom: 0;
     background-color: #007aff;
-    z-index: 9999;
     border: 0;
     font-size: 15px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     letter-spacing: 4px;
     border-radius: 0;
     font-family: Montserrat, sans-serif;
 }
 
 .navbar li a,
-.navbar .navbar-brand {
-    color: #fff !important;
+.navbar .navbar-right {
+    color: #007aff !important;
 }
 
 .navbar-nav li a:hover,
 .navbar-nav li.active a {
-    height: 90px;
     color: #007aff !important;
-    background-color: #fff !important;
+    font-weight: bolder;
 }
 
-.navbar-default .navbar-toggle {
-    border-color: transparent;
-    color: #fff !important;
+span.fa-chevron-up {
+    font-size: 27px;
+    color: #007aff;
 }
 
-footer .glyphicon {
-    font-size: 20px;
-    margin-bottom: 20px;
+span.fa-chevron-up:hover {
     color: #007aff;
 }
 

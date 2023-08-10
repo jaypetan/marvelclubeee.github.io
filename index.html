@@ -6,56 +6,54 @@
     <title>Marvel Club</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/index.css">
     <script src="js/index.js"></script>
 </head>
 
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#myPage"><img src="img/logo.png" alt="logo" style="width:150px;"></a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#events">EVENTS</a></li>
-                    <li><a href="#committees">COMMITTEES</a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg fixed-top bg-light navbar-light">
+        <a class="navbar-brand" href="#myPage" title="To 1st section"><img src="img/logo.png" alt="Marvel Club logo" style="height: 50px; width: 180px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon" style="color: black;"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about" title="To 2nd section">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#events" title="To 3rd section">EVENTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#committees" title="To 4th section">COMMITTEES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects" title="To 5th section">PROJECTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact" title="To 6th section">CONTACT</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
     <div class="jumbotron text-center">
         <h1>MARVEL</h1>
         <p>We specialize in Games, Projects and Development</p>
-        <form>
-            <div class="input-group">
-                <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-                <div class="input-group-btn">
-                    <button type="button" class="btn btn-danger">Subscribe</button>
-                </div>
-            </div>
-        </form>
     </div>
 
     <!-- Container (About Section) -->
     <div id="about" class="container-fluid">
         <div class="row">
-            <div class="col-sm-8">
+            <div>
                 <h2>About Company Page</h2><br>
                 <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -66,20 +64,14 @@
                     officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <br><button class="btn btn-default btn-lg">Get in Touch</button>
-            </div>
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-signal logo"></span>
+                <br><a href="#contact"><button class="btn btn-default btn-lg">Get in Touch</button></a>
             </div>
         </div>
     </div>
 
     <div class="container-fluid bg-grey">
         <div class="row">
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-globe logo slideanim"></span>
-            </div>
-            <div class="col-sm-8">
+            <div>
                 <h2>Our Values</h2><br>
                 <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -297,14 +289,11 @@
         </div>
     </div>
 
-    <!-- Image of location/map -->
-    <img src="/img/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
-
     <footer class="container-fluid text-center">
         <a href="#myPage" title="To Top">
-            <span class="glyphicon glyphicon-chevron-up"></span>
+            <span class="fa fa-chevron-up"></span>
         </a>
-        <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
+        <p><div class="text-center">&#169;2023 Marvel Club @ EEE | ALL RIGHTS RESERVED</div></p>
     </footer>
 
 </body>
