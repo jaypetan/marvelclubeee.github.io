@@ -576,6 +576,16 @@ span.fa-chevron-up:hover {
 	}
 }
 
+/* TODO: For infinite scrolling tabs */
+@keyframes committee-scroll {
+	0%{
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
 @-webkit-keyframes slide {
 	0% {
 		opacity: 0;
