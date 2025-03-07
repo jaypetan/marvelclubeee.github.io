@@ -1,0 +1,226 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@font-face {
+    font-family: 'Archive';
+    src: url(/1new/fonts/Archive/Archive-Regular.otf);
+}
+
+/* General Styles */
+*{
+    margin:                     0;
+    padding:                    0;
+    box-sizing:                 border-box;
+    scroll-behavior:            smooth;
+}
+:root {
+    --primary-color:            #fc0703;
+    --secondary-color:          #fea500;
+    --tertiary-color:           #9c34c2;
+
+    --text-color:               #1f1347;
+    --bg-color:                 #007aff;
+    --secondary-bg-color:       #0d4f83;
+    --navbar-bg-color:          #e3f2fc;
+
+    --small-font-size:          28px;
+    --med-font-size:            32px;
+    --large-font-size:          48px;
+    --primary-font:             'Archive', sans-serif;
+    --secondary-font:           'VT323', monospace;
+
+    --shadow:                   #3d3d3d76;
+}
+
+/* Text Styles */
+h1{
+    font-size:                  var(--large-font-size);
+    font-family:                var(--primary-font);
+    color:                      var(--text-color);
+    text-shadow:                var(--shadow) 3px 3px;
+}
+h2{
+    font-size:                  var(--large-font-size);
+    font-family:                var(--secondary-font);
+    color:                      var(--text-color);
+    text-shadow:                var(--shadow) 2px 2px;
+}
+p{
+    font-size:                  var(--small-font-size);
+    font-family:                var(--secondary-font);
+    text-shadow:                var(--shadow) 1px 1px;
+}
+.text-primary{
+    color:                      var(--primary-color);
+}
+.text-secondary{
+    color:                      var(--secondary-color);
+}
+.text-tertiary{
+    color:                      var(--tertiary-color);
+}
+
+/* Reusable General Layouts */
+.flex-row{
+    display:                    flex;
+    justify-content:            center;
+    align-items:                center;
+}
+.flex-col{
+    display:                    flex;
+    justify-content:            center;
+    align-items:                center;
+    flex-direction:             column;
+}
+.heading-padding{
+    padding:                    1rem;
+}
+.gap-1{
+    gap:                        1rem;
+}
+.gap-2{
+    gap:                        2rem;
+}
+.max-w-80{
+    max-width:                  80%;
+}
+.clickable{
+    cursor:                     pointer;
+}
+.hidden{
+    display:                    none;
+}
+
+/* Navigation Bar */
+nav ul{
+    width:                      100%;
+    display:                    flex;
+    justify-content:            space-around;
+    align-items:                center;
+    list-style-type:            none;
+    gap:                        2rem;
+    padding:                    1rem;
+    background-color:           var(--navbar-bg-color);
+} 
+nav .logo{
+    display:                    flex;
+    justify-content:            center;
+    align-items:                center;
+}
+nav a{
+    text-decoration:            none;
+    color:                      var(--text-color);
+    font-size:                  var(--med-font-size);
+    font-family:                var(--secondary-font);
+}
+nav a:hover{
+    color:                      var(--primary-color);
+}
+
+/* Sections */
+section{
+    height:                     100vh;
+    padding:                    2rem;
+    display:                    flex;
+    justify-content:            flex-start;
+    align-items:                center;
+    flex-direction:             column;
+    background-color:           var(--bg-color);
+}
+section:nth-child(odd){
+    background-color:           var(--secondary-bg-color);
+}
+.section-grid{
+    display:                    grid;
+    grid-template-columns:      6rem 4fr 6rem;
+    height:                     80vh;
+    align-items:                center;
+    gap:                        2rem;
+    width:                      100%;
+    max-width:                  1200px;
+}
+.section-grid .trigger{
+    height:                     6rem;
+    opacity:                    0.5;
+}
+.trigger:hover{
+    opacity:                   1;
+    cursor:                    pointer;
+}
+section button{
+    background-color:           transparent;
+    border:                     none;
+}
+/* Custom Styles */
+.logo-spacing{
+    display:                    flex;
+    justify-content:            flex-start;
+    width:                      100%;
+    gap:                        1rem;
+}
+.logo-spacing img{
+    width:                      64px;
+    height:                     64px;
+}
+.events, .projects {
+    display:                    none;
+    width:                      80%; 
+}
+.events img, .projects img {
+    width:                      100%; 
+    height:                     24rem; 
+    object-fit:                 cover;
+    margin-bottom:              1rem;
+}
+.slideshow-container {
+    max-width:                  50rem;
+    height:                     100%;
+    position:                   relative;
+    margin:                     auto;
+    
+    display:                    flex;
+    justify-content:            center;
+    align-items:                flex-start;
+}
+.slideshow-index-container{
+    display:                    flex;
+    gap:                        0.5rem;
+}
+.slideshow-index-container div{
+    width:                      3rem;
+    height:                     0.5rem;
+    background-color:           var(--navbar-bg-color);
+}
+.slideshow-index-container div.active{
+    background-color:           var(--tertiary-color);
+}
+.trigger
+/* Custom Animations */
+.shake:hover {
+    animation:                  rotateShake 0.5s ease-in-out;
+}
+
+@keyframes rotateShake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-15deg); }
+    50% { transform: rotate(15deg); }
+    75% { transform: rotate(-15deg); }
+    100% { transform: rotate(0deg); }
+}
+
+#description{
+    display:                    none;
+}
+#toggle-a-d:checked ~ #about{
+    display:                    none;
+}
+#toggle-a-d:checked ~ #description{
+    display:                    block;
+}
+
+.grow {
+    transition: transform 0.3s ease-in-out; 
+}
+.grow:hover{
+    transform:                  scale(1.2);
+
+}

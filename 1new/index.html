@@ -1,0 +1,175 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Club @EEE</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/carousell.js" defer></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li class="logo">
+                <img src="img/logo/marvel_logo.svg" alt="marvel club logo" height="100">
+                <img src="img/logo/marvel_logo_words.png" alt="" height="100">
+            </li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#commmitee">Commmitee</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="flex-col">
+        <div class="flex-row gap-2 max-w-80">
+            <div>
+                <label for="toggle-a-d">
+                    <img class="shake clickable" src="img/elements/controller.png" alt="" height="350">
+                </label>
+            </div>
+            <input type="checkbox" id="toggle-a-d" class="hidden">
+            <div id="about" class="flex-col gap-1">
+                <div>
+                    <h1>Marvel club</h1>
+                    <p>A game and innovation development club @ NTU EEE.</p>
+                </div>
+                <div class="logo-spacing">
+                    <a href="" class="">
+                        <img src="img/elements/instagram_logo.svg" alt="instagram" class="grow">
+                    </a>
+                    <a href="">
+                        <img src="img/elements/linkedin_logo.svg" alt="linkedin" class="grow">
+                    </a>
+                </div>
+            </div>
+            <div id="description">
+                <h1>About Us</h1>
+                <p>
+                    Marvel Club@EEE is a place that where members can gather and create marvellous, fun and exciting stuff, 
+                    like computer or video games, VR/AR games, board games and even theme park simulator rides, 
+                    and possibly showcasing their creations in competitions like Independent Games Festival! 
+                    Besides these, members can also develop innovative technological solutions to solve world issues. 
+                    In short, to create MARVEL!
+                </p>
+            </div>
+        </div>
+        <div class="flex-col gap-1">
+            <h2>CHECK OUT OUR GAMES!</h2>
+            <div class="flex-row grow">
+                <a href="#projects">
+                    <img src="img/elements/play_arrow.svg" alt="" height="100">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="events">
+        <div class="heading-padding flex-col">
+            <h1 class="text-primary">Events</h1>
+            <div class="slideshow-index-container">
+                <div class="index-events"></div>
+                <div class="index-events"></div>
+                <div class="index-events"></div>
+                <div class="index-events"></div>
+                <div class="index-events"></div>
+            </div>
+        </div>  
+        <div class="section-grid">
+            <div>
+                <button onclick="plusSlides(-1, 0)">
+                    <img src="img/elements/trigger.png" alt="" class="trigger">
+                </button>
+            </div>
+            <div>
+                <div>
+                    <div class="slideshow-container">
+                        <div class="events">
+                            <img src="img/events/gamescom1.jpg">
+                            <h1 class="text-secondary">Gamescom Outing</h1>
+                            <p>A club initiative to allow fellow club members to experience the world of video games and make connections with fellow game developers.</p>
+                        </div>
+                        <div class="events">
+                            <img src="img/events/blender2.jpg">
+                            <h1 class="text-secondary">Blender Workshop</h1>
+                            <p>The aim of this workshop is to teach EEE/IEM students the basics of how to design, model, texture and animate 3D assets for a game. Target audience consists of game competition team members and other interested students.</p>
+                        </div>
+                        <div class="events">
+                            <img src="img/events/orientation1.jpg">
+                            <h1 class="text-secondary">Enitio Sharing</h1>
+                            <p>Signals the birth of MARVEL club as we introduced ourselves to the freshmen for the very first time during orientation.</p>
+                        </div>
+                        <div class="events">
+                            <img src="img/events/welcome1.jpg">
+                            <h1 class="text-secondary">EEE Open House</h1>
+                            <p>Promoted our club and showcased games made by competition teams to attract new members.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button onclick="plusSlides(1, 0)">
+                    <img src="img/elements/trigger2.png" alt="" class="trigger">
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="heading-padding flex-col">
+            <h1>Projects</h1>
+            <div class="slideshow-index-container">
+                <div class="index-projects"></div>
+                <div class="index-projects"></div>
+                <div class="index-projects"></div>
+                <div class="index-projects"></div>
+                <div class="index-projects"></div>
+            </div>
+        </div>  
+        <div class="section-grid">
+            <div>
+                <button onclick="plusSlides(-1, 1)">
+                    <img src="img/elements/trigger.png" alt="" class="trigger">
+                </button>
+            </div>
+            <div>
+                <div>
+                    <div class="slideshow-container">
+                        <div class="projects">
+                            <img src="img/events/gamescom1.jpg">
+                            <h1 class="text-secondary">Gamescom Outing</h1>
+                            <p>A club initiative to allow fellow club members to experience the world of video games and make connections with fellow game developers.</p>
+                        </div>
+                        <div class="projects">
+                            <img src="img/events/blender2.jpg">
+                            <h1 class="text-secondary">Blender Workshop</h1>
+                            <p>The aim of this workshop is to teach EEE/IEM students the basics of how to design, model, texture and animate 3D assets for a game. Target audience consists of game competition team members and other interested students.</p>
+                        </div>
+                        <div class="projects">
+                            <img src="img/events/orientation1.jpg">
+                            <h1 class="text-secondary">Enitio Sharing</h1>
+                            <p>Signals the birth of MARVEL club as we introduced ourselves to the freshmen for the very first time during orientation.</p>
+                        </div>
+                        <div class="projects">
+                            <img src="img/events/welcome1.jpg">
+                            <h1 class="text-secondary">EEE Open House</h1>
+                            <p>Promoted our club and showcased games made by competition teams to attract new members.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button onclick="plusSlides(1, 1)">
+                    <img src="img/elements/trigger2.png" alt="" class="trigger">
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="commmitee">
+        <h1>Commmitee</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit
+            .</p>
+    </section>
+</body>
+</html>
