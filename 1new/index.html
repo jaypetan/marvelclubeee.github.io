@@ -1,221 +1,343 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marvel Club @EEE</title>
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="js/carousell.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li class="logo">
-                <img src="img/logo/marvel_logo.svg" alt="marvel club logo" height="100">
-                <img src="img/logo/marvel_logo_words.png" alt="" height="100">
-            </li>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#commitee">Commitee</a></li>
-        </ul>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li class="logo">
+          <img
+            src="img/logo/marvel_logo.svg"
+            alt="marvel club logo"
+            height="100"
+          />
+          <img src="img/logo/marvel_logo_words.png" alt="" height="100" />
+        </li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#commitee">Commitee</a></li>
+      </ul>
     </nav>
 
     <section id="about" class="flex-col">
-        <div class="flex-row gap-2 max-w-80">
-            <div>
-                <label for="toggle-about">
-                    <img class="shake clickable" src="img/elements/controller.png" alt="" height="350">
-                </label>
-            </div>
-            <input type="checkbox" id="toggle-about" class="hidden">
-            <div id="about-title" class="flex-col gap-1">
-                <div>
-                    <h1>Marvel club</h1>
-                    <p>A game and innovation development club @ NTU EEE.</p>
-                </div>
-                <div class="logo-spacing">
-                    <a href="" class="">
-                        <img src="img/elements/instagram_logo.svg" alt="instagram" class="grow">
-                    </a>
-                    <a href="">
-                        <img src="img/elements/linkedin_logo.svg" alt="linkedin" class="grow">
-                    </a>
-                </div>
-            </div>
-            <div id="about-description">
-                <h1>About Us</h1>
-                <p>
-                    Marvel Club@EEE is a place that where members can gather and create marvellous, fun and exciting stuff, 
-                    like computer or video games, VR/AR games, board games and even theme park simulator rides, 
-                    and possibly showcasing their creations in competitions like Independent Games Festival! 
-                    Besides these, members can also develop innovative technological solutions to solve world issues. 
-                    In short, to create MARVEL!
-                </p>
-            </div>
+      <div class="flex-row gap-2 max-w-80">
+        <div>
+          <label for="toggle-about">
+            <img
+              class="shake clickable"
+              src="img/elements/controller.png"
+              alt=""
+              height="350"
+            />
+          </label>
         </div>
-        <div class="flex-col gap-1">
-            <h2>CHECK OUT OUR GAMES!</h2>
-            <div class="flex-row grow">
-                <a href="#projects">
-                    <img src="img/elements/play_arrow.svg" alt="" height="100">
-                </a>
-            </div>
+        <input type="checkbox" id="toggle-about" class="hidden" />
+        <div id="about-title" class="flex-col gap-1">
+          <div>
+            <h1>Marvel club</h1>
+            <p>A game and innovation development club @ NTU EEE.</p>
+          </div>
+          <div class="logo-spacing">
+            <a href="" class="">
+              <img
+                src="img/elements/instagram_logo.svg"
+                alt="instagram"
+                class="grow"
+              />
+            </a>
+            <a href="">
+              <img
+                src="img/elements/linkedin_logo.svg"
+                alt="linkedin"
+                class="grow"
+              />
+            </a>
+          </div>
         </div>
+        <div id="about-description">
+          <h1>About Us</h1>
+          <p>
+            Marvel Club@EEE is a place that where members can gather and create
+            marvellous, fun and exciting stuff, like computer or video games,
+            VR/AR games, board games and even theme park simulator rides, and
+            possibly showcasing their creations in competitions like Independent
+            Games Festival! Besides these, members can also develop innovative
+            technological solutions to solve world issues. In short, to create
+            MARVEL!
+          </p>
+        </div>
+      </div>
+      <div class="flex-col gap-1">
+        <h2>CHECK OUT OUR GAMES!</h2>
+        <div class="flex-row grow">
+          <a href="#projects">
+            <img src="img/elements/play_arrow.svg" alt="" height="100" />
+          </a>
+        </div>
+      </div>
     </section>
 
     <section id="events">
-        <div class="heading-padding flex-col">
-            <h1 class="text-primary">Events</h1>
-            <div class="slideshow-index-container">
-                <div class="index-events"></div>
-                <div class="index-events"></div>
-                <div class="index-events"></div>
-                <div class="index-events"></div>
-                <div class="index-events"></div>
-            </div>
-        </div>  
-        <div class="section-grid">
-            <div>
-                <button onclick="plusSlides(-1, 0)">
-                    <img src="img/elements/trigger.png" alt="" class="trigger">
-                </button>
-            </div>
-            <div class="slideshow-container">
-                <div class="events">
-                    <img src="img/events/gamescom1.jpg">
-                    <div>
-                        <h1 class="text-secondary">Gamescom Outing</h1>
-                        <p>A club initiative to allow fellow club members to experience the world of video games and make connections with fellow game developers.</p>
-                    </div>
-                </div>
-                <div class="events">
-                    <img src="img/events/blender2.jpg">
-                    <div>
-                        <h1 class="text-secondary">Blender Workshop</h1>
-                        <p>The aim of this workshop is to teach EEE/IEM students the basics of how to design, model, texture and animate 3D assets for a game. Target audience consists of game competition team members and other interested students.</p>
-                    </div>
-                </div>
-                <div class="events">
-                    <img src="img/events/orientation1.jpg">
-                    <div>
-                        <h1 class="text-secondary">Enitio Sharing</h1>
-                        <p>Signals the birth of MARVEL club as we introduced ourselves to the freshmen for the very first time during orientation.</p>
-                    </div>
-                </div>
-                <div class="events">
-                    <img src="img/events/welcome1.jpg">
-                    <div>
-                        <h1 class="text-secondary">EEE Open House</h1>
-                        <p>Promoted our club and showcased games made by competition teams to attract new members.</p>
-                    </div>
-                </div>
-                <div class="events">
-                    <video controls>
-                        <source src="img/events/playtesting.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div>
-                        <h1 class="text-secondary">Playtesting Session</h1>
-                        <p>Club members gathered to test our exciting games and meet the talented competition teams behind them. We were honored to host an alumni, Duan Kai, who is a game developer at Junkfish and provided valuable feedback on our games and gave us an insight into game design philosophy.</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <button onclick="plusSlides(1, 0)">
-                    <img src="img/elements/trigger2.png" alt="" class="trigger">
-                </button>
-            </div>
+      <div class="heading-padding flex-col">
+        <h1 class="text-primary">Events</h1>
+        <div class="slideshow-index-container">
+          <div class="index-events"></div>
+          <div class="index-events"></div>
+          <div class="index-events"></div>
+          <div class="index-events"></div>
+          <div class="index-events"></div>
         </div>
+      </div>
+      <div class="section-grid">
+        <div>
+          <button onclick="plusSlides(-1, 0)">
+            <img src="img/elements/trigger.png" alt="" class="trigger" />
+          </button>
+        </div>
+        <div class="slideshow-container">
+          <div class="events">
+            <img src="img/events/gamescom1.jpg" />
+            <div>
+              <h1 class="text-secondary">Gamescom Outing</h1>
+              <p>
+                A club initiative to allow fellow club members to experience the
+                world of video games and make connections with fellow game
+                developers.
+              </p>
+            </div>
+          </div>
+          <div class="events">
+            <img src="img/events/blender2.jpg" />
+            <div>
+              <h1 class="text-secondary">Blender Workshop</h1>
+              <p>
+                The aim of this workshop is to teach EEE/IEM students the basics
+                of how to design, model, texture and animate 3D assets for a
+                game. Target audience consists of game competition team members
+                and other interested students.
+              </p>
+            </div>
+          </div>
+          <div class="events">
+            <img src="img/events/orientation1.jpg" />
+            <div>
+              <h1 class="text-secondary">Enitio Sharing</h1>
+              <p>
+                Signals the birth of MARVEL club as we introduced ourselves to
+                the freshmen for the very first time during orientation.
+              </p>
+            </div>
+          </div>
+          <div class="events">
+            <img src="img/events/welcome1.jpg" />
+            <div>
+              <h1 class="text-secondary">EEE Open House</h1>
+              <p>
+                Promoted our club and showcased games made by competition teams
+                to attract new members.
+              </p>
+            </div>
+          </div>
+          <div class="events">
+            <video controls>
+              <source src="img/events/playtesting.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div>
+              <h1 class="text-secondary">Playtesting Session</h1>
+              <p>
+                Club members gathered to test our exciting games and meet the
+                talented competition teams behind them. We were honored to host
+                an alumni, Duan Kai, who is a game developer at Junkfish and
+                provided valuable feedback on our games and gave us an insight
+                into game design philosophy.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button onclick="plusSlides(1, 0)">
+            <img src="img/elements/trigger2.png" alt="" class="trigger" />
+          </button>
+        </div>
+      </div>
     </section>
 
     <section id="projects">
-        <div class="heading-padding flex-col">
-            <h1>Projects</h1>
-            <div class="slideshow-index-container">
-                <div class="index-projects"></div>
-                <div class="index-projects"></div>
-                <div class="index-projects"></div>
-            </div>
-        </div>  
-        <div class="section-grid">
-            <div>
-                <button onclick="plusSlides(-1, 1)">
-                    <img src="img/elements/trigger.png" alt="" class="trigger">
-                </button>
-            </div>
-            <div class="slideshow-container">
-                <div class="projects">
-                    <div>
-                        <img src="img/projects/earthlings.png" alt="Earthlings">
-                        <img src="img/elements/download_button.svg" alt="download">
-                    </div>
-                    <div>
-                        <h1 class="text-secondary line-below">Earthlings</h1>
-                        <p>Earthlings is a two-player 2.5D environment game that promotes ecological awareness by encouraging cooperation in the game. By developing this game, we hope to prompt our players to think about the relationship between humans, other creatures, and nature.</p>
-                    </div>
-                </div>
-                <div class="projects">
-                    <div>
-                        <img src="img/projects/dejavu.jpeg" alt="Deja Vu">
-                        <img src="img/elements/download_button.svg" alt="download">
-                    </div>
-                    <div>
-                        <h1 class="text-secondary line-below">Deja Vu</h1>
-                        <p>A 2D puzzle platformer that utilizes a variety of elemental potions to overcome environmental obstacles and hazards.</p>
-                    </div>
-                </div>
-                <div class="projects">
-                    <div>
-                        <img src="img/projects/bee.png" alt="Bee Game">
-                        <img src="img/elements/download_button.svg" alt="download">
-                    </div>
-                    <div>
-                        <h1 class="text-secondary line-below">Bee Game</h1>
-                        <p>A 3D game that simulates the life of a bee. The game aims to educate players about the life of a bee and the importance of bees in the ecosystem.</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <button onclick="plusSlides(1, 1)">
-                    <img src="img/elements/trigger2.png" alt="" class="trigger">
-                </button>
-            </div>
+      <div class="heading-padding flex-col">
+        <h1>Projects</h1>
+        <div class="slideshow-index-container">
+          <div class="index-projects"></div>
+          <div class="index-projects"></div>
+          <div class="index-projects"></div>
         </div>
+      </div>
+      <div class="section-grid">
+        <div>
+          <button onclick="plusSlides(-1, 1)">
+            <img src="img/elements/trigger.png" alt="" class="trigger" />
+          </button>
+        </div>
+        <div class="slideshow-container">
+          <div class="projects">
+            <div>
+              <img src="img/projects/earthlings.png" alt="Earthlings" />
+              <img src="img/elements/download_button.svg" alt="download" />
+            </div>
+            <div>
+              <h1 class="text-secondary line-below">Earthlings</h1>
+              <p>
+                Earthlings is a two-player 2.5D environment game that promotes
+                ecological awareness by encouraging cooperation in the game. By
+                developing this game, we hope to prompt our players to think
+                about the relationship between humans, other creatures, and
+                nature.
+              </p>
+            </div>
+          </div>
+          <div class="projects">
+            <div>
+              <img src="img/projects/dejavu.jpeg" alt="Deja Vu" />
+              <img src="img/elements/download_button.svg" alt="download" />
+            </div>
+            <div>
+              <h1 class="text-secondary line-below">Deja Vu</h1>
+              <p>
+                A 2D puzzle platformer that utilizes a variety of elemental
+                potions to overcome environmental obstacles and hazards.
+              </p>
+            </div>
+          </div>
+          <div class="projects">
+            <div>
+              <img src="img/projects/bee.png" alt="Bee Game" />
+              <img src="img/elements/download_button.svg" alt="download" />
+            </div>
+            <div>
+              <h1 class="text-secondary line-below">Bee Game</h1>
+              <p>
+                A 3D game that simulates the life of a bee. The game aims to
+                educate players about the life of a bee and the importance of
+                bees in the ecosystem.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button onclick="plusSlides(1, 1)">
+            <img src="img/elements/trigger2.png" alt="" class="trigger" />
+          </button>
+        </div>
+      </div>
     </section>
 
     <section id="commitee">
-        <div class="heading-padding flex-col">
-            <h1 class="text-primary">Committee</h1>
-            <div class="slideshow-index-container">
-                <div class="index-committee"></div>
-                <div class="index-committee"></div>
-                <div class="index-committee"></div>
-            </div>
-        </div>  
-        <div class="section-grid">
-            <div>
-                <button onclick="plusSlides(-1, 2)">
-                    <img src="img/elements/trigger.png" alt="" class="trigger">
-                </button>
-            </div>
-            <div class="slideshow-container">
-                <div class="committee">
-                    <h1>hello</h1>
-                </div>
-                <div class="committee">
-                    <h1>hello2</h1>
-                </div>
-                <div class="committee">
-                    <h1>hello3</h1>
-                </div>
-            </div>
-            <div>
-                <button onclick="plusSlides(1, 2)">
-                    <img src="img/elements/trigger2.png" alt="" class="trigger">
-                </button>
-            </div>
+      <div class="heading-padding flex-col">
+        <h1 class="text-primary">Committee</h1>
+        <div class="slideshow-index-container">
+          <div class="index-committee"></div>
+          <div class="index-committee"></div>
+          <div class="index-committee"></div>
         </div>
+      </div>
+      <div class="section-grid">
+        <div>
+          <button onclick="plusSlides(-1, 2)">
+            <img src="img/elements/trigger.png" alt="" class="trigger" />
+          </button>
+        </div>
+        <div class="slideshow-container">
+          <div class="committee">
+            <div class="committee-rows">
+              <div class="member-card">
+                <p class="member-name">Mikail</p>
+                <img src="img/committee/president.jpg" alt="president" />
+                <p class="member-role">President</p>
+              </div>
+              <div class="member-card">
+                <p class="member-name">Mil</p>
+                <img
+                  src="img/committee/vice-president.JPG"
+                  alt="vice-president"
+                />
+                <p class="member-role">Vice-President & Technical</p>
+              </div>
+            </div>
+          </div>
+          <div class="committee">
+            <div class="committee-rows">
+              <div class="member-card">
+                <p class="member-name">Yan Qing</p>
+                <img
+                  src="img/committee/honararysecretary.JPG"
+                  alt="honararysecretary"
+                />
+                <p class="member-role">Honary Sec. & Finance</p>
+              </div>
+              <div class="member-card">
+                <p class="member-name">Yaoxuan</p>
+                <img
+                  src="img/committee/coreporateliaison.JPG"
+                  alt="coreporateliaison"
+                />
+                <p class="member-role">Corporate Liaison</p>
+              </div>
+            </div>
+            <div class="committee-rows">
+              <div class="member-card">
+                <p class="member-name">Ding Man</p>
+                <img src="img/committee/projects.JPG" alt="projects" />
+                <p class="member-role">Projects</p>
+              </div>
+              <div class="member-card">
+                <p class="member-name">Rishav</p>
+                <img src="img/committee/publicity.JPG" alt="publicity" />
+                <p class="member-role">Publicity</p>
+              </div>
+            </div>
+          </div>
+          <div class="committee">
+            <div class="committee-rows">
+              <div class="member-card">
+                <p class="member-name">Yan Peng</p>
+                <img src="img/committee/outreach.JPG" alt="outreach" />
+                <p class="member-role">Outreach</p>
+              </div>
+              <div class="member-card">
+                <p class="member-name">Ming Wei</p>
+                <img src="img/committee/technical.JPG" alt="technical" />
+                <p class="member-role">Technical</p>
+              </div>
+            </div>
+            <div class="committee-rows">
+              <div class="member-card">
+                <p class="member-name">Zhize</p>
+                <img
+                  src="img/committee/operations2.JPG"
+                  alt="operations2.JPG"
+                />
+                <p class="member-role">Operations</p>
+              </div>
+              <div class="member-card">
+                <p class="member-name">Zhang Wei</p>
+                <img src="img/committee/operations.JPG" alt="operations" />
+                <p class="member-role">Operations</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button onclick="plusSlides(1, 2)">
+            <img src="img/elements/trigger2.png" alt="" class="trigger" />
+          </button>
+        </div>
+      </div>
     </section>
-</body>
+  </body>
 </html>
